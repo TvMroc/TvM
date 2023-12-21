@@ -1,0 +1,98 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    height: auto;
+}
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    background-color: aqua;
+    width: 100%;
+    height: 270px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.logo {
+    width: 280px;
+}
+.topbar {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border: 1.5px gray solid;
+    justify-content:space-between;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:bisque;
+    min-width: 620px;
+    height: 100%;
+    margin-left: 150px;
+}
+.menuitem {
+    height: 13px;
+    width: auto;
+    margin-right: 45px;
+    display: block;
+    font-size: 13px;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:burlywood;
+    width: 209px;
+    height: 100%;
+    margin-right: 150px;
+}
+.socialitem {
+    width: 13px;
+    height: auto;
+    display: block;
+}
+.search {
+    margin-left: 6px;
+}
+
+.body {
+    background-color: aquamarine;
+    width: 100%;
+    min-height: 1500px;
+}
+.sticky {
+    height: 300px;
+    width: 300px;
+}
+.stickyitem {
+    position: sticky;
+    top: 300px;
+    right: 10px
+}
+.info {
+
+}
+.aboutme {
+    
+}
+
+.footer {
+    background-color: beige;
+    width: 100%;
+    height: 165px;
+}
+.socialfooter {
+    background-color:burlywood;
+    width: 100%;
+    height: 60px;
+    border: 2px rgba(100, 100, 100, 0.1) solid;
+}
