@@ -1,0 +1,70 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700&display=swap" rel="stylesheet"/>
+    <title>Resultaten</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="cijfer.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <img class="header-logo" src="images/logo-roc-nijmegen.svg"/>
+      <div class="menu">
+        <a href="docent.html" class="menu-item">Home</a>
+        <a href="roosterdocent.html" class="menu-item">Rooster</a>
+        <a class="menu-item">Resultaten</a>
+      </div>
+      <div class="account">
+        <img class="account-pfp" src="images/pfp.png"/>
+        <p>Jan Meeuwissen</p>
+      </div>
+    </div>
+    <div class="cijfer">
+        <div class="search">
+            <h2>Studenten lijst</h2>
+            <input type="text" id="searchInput" onkeyup="studentSearch()" placeholder="Studenten zoeken...">
+            <ul id="search">
+                <li><a href="#" id="Adele" onclick="selectStudent('Adele')">Adele</a></li>
+                <li><a href="#" id="Agnes" onclick="selectStudent('Agnes')">Agnes</a></li>
+                <li><a href="#" id="Billy" onclick="selectStudent('Billy')">Billy</a></li>
+                <li><a href="#" id="Bob" onclick="selectStudent('Bob')">Bob</a></li>
+                <li><a href="#" id="Calvin" onclick="selectStudent('Calvin')">Calvin</a></li>
+                <li><a href="#" id="Christina" onclick="selectStudent('Christina')">Christina</a></li>
+                <li><a href="#" id="Cindy" onclick="selectStudent('Cindy')">Cindy</a></li>
+                <li><a href="#" id="Hubert" onclick="selectStudent('Hubert')">Hubert</a></li>
+                <li><a href="#" id="Hank" onclick="selectStudent('Hank')">Hank</a></li>
+                <li><a href="#" id="Indy" onclick="selectStudent('Indy')">Indy</a></li>
+                <li><a href="#" id="Jill" onclick="selectStudent('Jill')">Jill</a></li>
+                <li><a href="#" id="Jack" onclick="selectStudent('Jack')">Jack</a></li>
+                <li><a href="#" id="Luke" onclick="selectStudent('Luke')">Luke</a></li>
+            </ul>
+        </div>
+        <div class="grading">
+            <h2>Cijfer</h2>
+            <form id="gradingForm" action="store.php">
+                <select class="grade-item" id="subjectInput">
+                    <option value="Basis programmeren">Basis programmeren</option>
+                    <option value="Basis ICT">Basis ICT</option>
+                    <option value="Website">Website</option>
+                    <option value="Tools">Tools</option>
+                    <option value="Engels">Engels</option>
+                    <option value="Nederlands">Nederlands</option>
+                    <option value="Burgerschap">Burgerschap</option>
+                </select>
+                <input class="grade-item" type="text" id="gradeInput" placeholder="Cijfer" required>
+                <input class="grade-item" type="button" id="student" value="Selecteer een student">
+                <button class="grade-item" type="button" onclick="grade()">Cijfer toevoegen</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <img class="foot-img" src="images/logo-roc-nijmegen.svg" />
+        <a href="index.html" class="menu-item">Afmelden</a>
+        <div class="foot-menu">
+            <a href="docent.html" class="menu-item">Home</a>
+            <a href="roosterdocent.html" class="menu-item">Rooster</a>
+           
+            <a class="menu-item">Resultaten</a>
+        </div>
+    </div>
+</body>

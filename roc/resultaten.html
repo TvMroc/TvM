@@ -1,0 +1,65 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700&display=swap" rel="stylesheet"/>
+    <title>Resultaten</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="resultaten.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <img class="header-logo" src="images/logo-roc-nijmegen.svg"/>
+      <div class="menu">
+        <a href="main.html" class="menu-item">Home</a>
+        <a href="rooster.html" class="menu-item">Rooster</a>
+        <a class="menu-item">Resultaten</a>
+      </div>
+      <div class="account">
+        <img class="account-pfp" src="images/bob.jpg"/>
+        <p>Bob</p>
+      </div>
+    </div>
+    <div class="resultaten">
+        <div class="vakken">
+            <p class="vak" onclick="selectVak('BasisProgrammeren')">Basis programmeren</p>
+            <p class="vak" onclick="selectVak('BasisICT')">Basis ICT</p>
+            <p class="vak" onclick="selectVak('Website')">Website</p>
+            <p class="vak" onclick="selectVak('Tools')">Tools</p>
+            <p class="vak" onclick="selectVak('Engels')">Engels</p>
+            <p class="vak" onclick="selectVak('Nederlands')">Nederlands</p>
+            <p class="vak" onclick="selectVak('Burgerschap')">Burgerschap</p>
+        </div>
+        <div class="result">
+            <div id="BasisProgrammeren" class="result-vak">
+                <p class="result-txt">Basis programmeren</p>
+                <p class="paragraph-resulaten">Opdracht, Mastermind:</p><p class="cijfer-resultaat-voldoende">G</p></div>
+            <div id="BasisICT" class="result-vak">
+                <p class="result-txt">Basis ICT</p>
+                <p class="paragraph-resulaten">Toets 1, Netword and Hardware:</p><p class="cijfer-resultaat-voldoende">G</p></div>
+            <div id="Website" class="result-vak">
+                <p class="result-txt">Website</p>
+                <p class="paragraph-resulaten">Opdracht, PinkGoose Website:</p><p class="cijfer-resultaat-voldoende">V</p></div>
+            <div id="Tools" class="result-vak">
+                <p class="result-txt">Tools</p>
+                <p class="paragraph-resulaten">Opdracht, Alle opdrachten af:</p><p class="cijfer-resultaat-onvoldoende">O</p></div>
+            <div id="Engels" class="result-vak">
+                <p class="result-txt">Engels</p>
+                <p class="paragraph-resulaten">Toets 1, Lees en Luister:</p><p class="cijfer-resultaat-voldoende">8,5</p></div>
+            <div id="Nederlands" class="result-vak">
+                <p class="result-txt">Nederlands</p>
+                <p class="paragraph-resulaten">Toets 1, Lees en Luister:</p><p class="cijfer-resultaat-onvoldoende">5,2</p></div>
+            <div id="Burgerschap" class="result-vak">
+                <p class="result-txt">Burgerschap</p>
+               <p class="paragraph-resulaten">Toets 1, Media:</p><p class="cijfer-resultaat-onvoldoende">4,8</p></div>
+        </div>
+    </div>
+    <div class="footer">
+        <img class="foot-img" src="images/logo-roc-nijmegen.svg" />
+        <a href="index.html" class="menu-item">Afmelden</a>
+        <div class="foot-menu">
+            <a href="docent.html" class="menu-item">Home</a>
+            <a href="rooster.html" class="menu-item">Rooster</a>
+            <a class="menu-item">Resultaten</a>
+        </div>
+    </div>
+</body>
