@@ -10,6 +10,16 @@
 BFDBE9 extra
 F4F7F2 txt2
 */
+@keyframes load {
+    from {
+        margin-right: 2000px;
+        margin-left: -2000px;
+    }
+    to {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
 
 
 /* main */
@@ -19,9 +29,9 @@ body {
     background-repeat: no-repeat;
     background-position:top;
     background-attachment: fixed;
-    height: 1910px;
+    height: 100vh;
     overflow-x: hidden;
-    overflow-y: show;
+    overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none; 
     scroll-behavior: smooth;
@@ -65,7 +75,7 @@ body::-webkit-scrollbar {
 }
 .menu a:hover {
     color: #556B6F;
-    rotate: 5deg;
+    rotate: 3deg;
     padding: 20px;
     margin: -20px;
 }
@@ -85,6 +95,15 @@ body::-webkit-scrollbar {
     transition: rotate 0s color 0.3s;
     margin-bottom: -20px;
 }
+.container {
+    display: flex;
+    justify-content: center;
+    transition: margin-left 0.75s, margin-right 0.75s;
+    animation-name: load;
+    animation-duration: 0.75s;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* home */
 .about {
@@ -95,8 +114,7 @@ body::-webkit-scrollbar {
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 150px;
-    margin-left: 12vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'VT323';
     color: rgb(137, 147, 150);
     font-weight: 600;
 }
@@ -104,15 +122,15 @@ body::-webkit-scrollbar {
     margin-left: 20px;
 }
 .info {
-    height: 35vh;
+    height: 30vh;
     padding-top: 100px;
-    margin-top: 240px;
+    margin-top: 285px;
     border-top-right-radius: 100px;
     overflow-x: hidden;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
-    scroll-snap-points-y: repeat(300px);
-    scroll-snap-align: end;
+    scroll-snap-points-y: repeat(550px);
+    scroll-snap-align: start;
 
 }
 .info::-webkit-scrollbar {
@@ -123,11 +141,13 @@ body::-webkit-scrollbar {
     background-color: #556B6F;
     border-top-right-radius: 100px;
     padding: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     font-size: 32px;
     margin-top: -100px;
-    height: 400px;
+    min-height: 400px;
     scroll-snap-align: start;
+    box-shadow: 2px -5px 7px rgb(0, 0, 0, 0.1);
+    color: white;
 }
 
 /* my work */
@@ -153,6 +173,17 @@ body::-webkit-scrollbar {
     margin: 1px;
     background-color: aquamarine;
     transition:  margin-top 0.5s, margin-left 0.5s, height 0.5s, width 0.5s;
+}
+.img-scroll img:hover {
+    height: 610px;
+}
+.img-scroll img:hover::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    transition: width 0.3s ease-out;
+    background-color: #556B6F;
 }
 .scroll {
     display: flex;
@@ -185,16 +216,42 @@ body::-webkit-scrollbar {
 }
 
 /* contact */
-
-
-
-
-.purple {
-    background-color: blueviolet;
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60vw;
+    margin-top: 200px; 
+    border-radius: 25px;  
+    color: white;
 }
-.orange {
-    background-color: orange;
+.contact-info {
+    border-radius: 25px;
+    font-size: 48px;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+}
+.contact-links {
+    width: 50%;
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 200px;
+    border-radius: 25px;
+    font-size: 24px;
+    align-self: center;
+    margin-top: 50px;
+    margin: 5px;
+    padding: 40px;
+}
+
+
+
+.cyan {
+    background-image: linear-gradient(#86bcd1, #73afc7);
 }
 .blue {
-    background-color: aqua;
+    background-image: linear-gradient(#4B91AE, #4A83AC);
+}
+.darkblue {
+    background-image: linear-gradient(rgb(63, 95, 129), #417192);
 }

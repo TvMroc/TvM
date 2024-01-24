@@ -4,19 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <Title>TvM</Title>
-        <link rel="stylesheet" href="main.css">
-        <script src="dropdown.js"></script>
+        <link rel="stylesheet" href="main.css">]
+        <script src="load.js"></script>
     </head>
     <body>
         <div class="header">
             <h1 class="logo">Thomas van Meelis</h1>
             <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="mywork.html">My work</a>
+                <a onclick="load('index.html')">Home</a>
+                <a onclick="load('mywork.html')">My work</a>
                 <a id="selected">Contact</a>
             </div>
         </div>
         <div class="container">
+            <div class="contact">
+                <div class="contact-info"><p>Contact<br>Thomas van Meelis</p></div>
+                <div class="contact-links"><p>Mail<br>1207837@student.roc-nijmegen.nl</p></div>
+            </div>
         </div>
     </body>
 </html>

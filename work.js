@@ -1,11 +1,8 @@
-function scrollBack() {
-    document.getElementById('scrollBar').scrollBy(-600, 0);
-}
-function scrollRight() {
-    document.getElementById('scrollBar').scrollBy(600, 0);
+function scrollto(direction) {
+    document.getElementById('scrollBar').scrollBy(direction, 0);
 }
 
-function hjj(site, distance) {
+function redirect(site, distance) {
     document.getElementById(`${site}`).style.height = "100"+"vh";
     document.getElementById('imgScroll').style.marginTop = "-202"+"px";
     document.getElementById('imgScroll').style.marginLeft = "-2"+"px";
