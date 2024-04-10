@@ -263,6 +263,20 @@ body::-webkit-scrollbar {
     padding: 5px;
     color: white;
 }
+.work-info {
+    width: 70%;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-bottom: 75px;
+
+}
+.work-info div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
 
 
 .cyan {
